@@ -1,0 +1,27 @@
+jwt:
+  secret: secrectkey123
+
+server:
+    port: 8081         
+    
+    
+spring:
+    application:
+           name: Job_Portal_JWTService
+    data:
+        mongodb:
+             uri: mongodb+srv://Employee:12345@cluster0.6gc12.mongodb.net/JobAdmin?retryWrites=true&w=majority
+eureka:
+     client:
+          service-url:
+                   defaultZone: http://localhost:8761/eureka/          
+                          
+logging:
+  file: 
+    path: /my-logs/app.log
+    name: log.txt  
+    
+data:
+   exception:
+          incmsg: Invalid Credentials!!
+            
